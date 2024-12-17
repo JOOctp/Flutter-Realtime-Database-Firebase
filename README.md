@@ -1,16 +1,7 @@
-# poleks
+# Pencatatan Pasien Poliklinik Eksekutif
 
-A new Flutter project.
+## About this project
 
-## Getting Started
+A Flutter project that can run on web and android platforms. I made this simple project to help my mother in recording patient visits in a room. Because my mother is often confused to make monthly reports in the form of bar charts.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The technology I use is Firebase Atuh using a google account to get access. Then for the database I use Firebase Realtime Database.
