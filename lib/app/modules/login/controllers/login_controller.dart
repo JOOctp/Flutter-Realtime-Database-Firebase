@@ -31,9 +31,14 @@ class LoginController extends BaseController {
       photoUrl: user.user!.photoURL
     );
 
-    _database.checkAndStoreUser(user: userData).then((value){
-      LocalStorage.saveValue(LocalStorageValues.USER, userData.toJson());
-      Get.offNamed(Routes.HOME);
+    _database.isUserExist(email: user.user!.email!).then((isExist) async {
+      if(isExist){
+        LocalStorage.saveValue(LocalStorageValues.USER, userData.toJson());
+        Get.offAllNamed(Routes.HOME);
+      } else {
+        await FirebaseAuth.instance.signOut();
+        showErrorToast("Anda tidak memiliki akses aplikasi");
+      }
     });
   }
 }

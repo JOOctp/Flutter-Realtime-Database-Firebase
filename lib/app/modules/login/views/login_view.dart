@@ -22,24 +22,6 @@ class LoginView extends GetView<LoginController> {
             flex: 1,
             child: Container(
               color: ColorsValues.colorPrimaryAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  SvgPicture.asset(
-                    width: 450,
-                    ImageValues.icIllustration,
-                    fit: BoxFit.scaleDown,
-                  ),
-                  const SizedBox(height: PaddingValues.paddingExtra),
-                  Text(
-                    "Melayani dengan sepenuh hati",
-                    style: TextStyleValues.font18Bold.copyWith(
-                      color: ColorsValues.colorPrimary
-                    ),
-                  )
-                ],
-              ),
             ),
           ),
           Expanded(
@@ -55,6 +37,14 @@ class LoginView extends GetView<LoginController> {
                     ImageValues.icIllustration,
                     fit: BoxFit.scaleDown,
                   ),
+                  const SizedBox(height: PaddingValues.paddingExtra),
+                  Text(
+                    "Melayani dengan sepenuh hati",
+                    style: TextStyleValues.font18Bold.copyWith(
+                      color: ColorsValues.colorPrimary
+                    ),
+                  ),
+                  const SizedBox(height: PaddingValues.paddingExtra),
                   Text(
                     "Masuk menggunakan Akun Google",
                     style: TextStyleValues.font18Bold.copyWith(
