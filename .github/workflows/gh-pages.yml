@@ -18,7 +18,6 @@ jobs:
     - name: Set up Flutter Web
       uses: bluefireteam/flutter-gh-pages@v8
       with:
-        baseHref: /Flutter-Realtime-Database-Firebase/
         webRenderer: canvaskit
     
     
